@@ -1,3 +1,6 @@
+![screenshot displaying a textured heightfield]
+(https://github.com/atomictraveller/win32-OpenGL/blob/master/screenshot.png)
+
 a minimal use of modern OpenGL in win32 using no external libraries.
 
 only the standard gl header is added to the default win32 app framework..   <br>
