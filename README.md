@@ -1,12 +1,14 @@
 a minimal use of modern OpenGL in win32 using no external libraries.
 
 only the standard gl header is added to the default win32 app framework..
-#include <GL/gl.h>
-#pragma comment(lib, "opengl32.lib")
+* #include <GL/gl.h>
+* #pragma comment(lib, "opengl32.lib")
 
 * rendering context creation in modern OpenGL is identical to "classic"
 * the GL/gl.h included in win32 is OpenGL 1.1 (ms DirectX is a competitor)
 * modern gl APIs are loaded directly from the .dll with LoadLibrary
+
+this eg. allows me to use OpenGL at version 4.6 on my current platform (a brief comment in ogl.h explains reading the version number).
 
 the initial array of resources for using OpenGL on windows is overwhelming. my assessment is that glm, which is distributed as a header and is used seemingly universally, is the most sensible path to using modern OpenGL APIs. however, it is possible to use LoadLibrary to extract the modern APIs directly from the OpenGL .dll if you don't want to have any external dependencies whatsoever.
 
