@@ -1,8 +1,8 @@
 a minimal use of modern OpenGL in win32 using no external libraries.
 
 only the standard gl header is added to the default win32 app framework..
-* #include <GL/gl.h>
-* #pragma comment(lib, "opengl32.lib")
+#include <GL/gl.h>
+#pragma comment(lib, "opengl32.lib")
 
 * rendering context creation in modern OpenGL is identical to "classic"
 * the GL/gl.h included in win32 is OpenGL 1.1 (ms DirectX is a competitor)
