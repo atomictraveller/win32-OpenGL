@@ -1,9 +1,9 @@
 a minimal use of modern OpenGL in win32 using no external libraries.
 
-only the standard gl header is added to the default win32 app framework..   
-#include <GL/gl.h>   
-#pragma comment(lib, "opengl32.lib")   
-
+only the standard gl header is added to the default win32 app framework..   <br>
+#include <GL/gl.h>   <br>
+#pragma comment(lib, "opengl32.lib")  <br>
+<br>
 * rendering context creation in modern OpenGL is identical to "classic"
 * the GL/gl.h included in win32 is OpenGL 1.1 (ms DirectX is a competitor)
 * modern gl APIs are loaded directly from the .dll with LoadLibrary
@@ -15,10 +15,10 @@ the initial array of resources for using OpenGL on windows is overwhelming. my a
 this choice may seem insensate for those acclimatised to resources, there may be still a few of us out here who for some reason or other maintain eclectic habits.
 
 
-so here you have the default msvc 2019 win32 c/c++ "windows desktop app" framework. there are two header files:   
-#include "ogl.h"	//	my opengl header   
-#include "win32 OpenGL.h" //  the header for this project   
-
+so here you have the default msvc 2019 win32 c/c++ "windows desktop app" framework. there are two header files:   <br>
+#include "ogl.h"	//	my opengl header   <br>
+#include "win32 OpenGL.h" //  the header for this project   <br>
+<br>
 ogl.h includes a list of constants and prototypes for the created API. the short list of OpenGL APIs was inherited from this win32 OpenGL source:
 https://github.com/vbsw/opengl-win32-example/blob/3.0/Main.cpp
 
